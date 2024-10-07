@@ -15,11 +15,10 @@ drpDwn2.innerHTML += drpDwnOp;
 const btn = document.getElementById('convert');
 
 btn.addEventListener('click', () => {
-    const tempInput = Number(document.getElementById('value').value);
+    const tempInput = Number(document.getElementById('value'));
     const tempOutput = document.getElementById('output');
 
     _alert.style.display = 'none';  
-    tempOutput.value = '';
     
     const tempType1 = drpDwn1.value;
     const tempType2 = drpDwn2.value;
@@ -45,6 +44,8 @@ btn.addEventListener('click', () => {
         const fahrenheit = celsius * 9.0 / 5.0 + 32;
         tempOutput.value = fahrenheit;
     } else {
+        tempOutput.value = '';
+        document.getElementById('value').value = '';
         _alert.style.display = 'block';      
     }
     
