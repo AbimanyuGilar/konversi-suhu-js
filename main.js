@@ -15,7 +15,7 @@ drpDwn2.innerHTML += drpDwnOp;
 const btn = document.getElementById('convert');
 
 btn.addEventListener('click', () => {
-    const tempInput = Number(document.getElementById('value'));
+    const tempInput = Number(document.getElementById('value').value);
     const tempOutput = document.getElementById('output');
 
     _alert.style.display = 'none';  
