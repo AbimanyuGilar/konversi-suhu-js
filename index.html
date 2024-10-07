@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>KONVERSI SUHU</h1>
-    <div class="container">
-        <select name="tempType" id="tempType1" class="tempType"></select>
-        <input type="number" id="value">
-        <button id="convert">Konversi</button>
-    </div>
 
-    <div class="container">
-        <select name="tempType" id="tempType2" class="tempType"></select>
-        <input type="text" id="output" disabled>
-    </div>
+    <div id="content">
+        <h1>KONVERSI SUHU</h1>
+        
+        <div id="container">
+            <div class="section">
+                <select name="tempType" id="tempType1" class="tempType"></select>
+                <input type="number" id="value">
+                <button id="convert">Konversi</button>
+            </div>
+        
+            <div class="section">
+                <select name="tempType" id="tempType2" class="tempType"></select>
+                <input type="text" id="output" disabled>
+            </div>
+        
+        </div>
 
-    <p id="alert" style="color: red; display: none;">pastikan kedua jenis suhu berbeda</p>
+        <p id="alert" style="color: red; display: none;">pastikan kedua jenis suhu berbeda</p>
+    </div>
 
     <script src="main.js"></script>
 </body>
