@@ -1,37 +1,108 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
+/* Style for the body */
 body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7ff; /* Warna latar belakang biru muda lembut */
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
+/* Main content container */
 #content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid black;
+    background-color: #ffffff;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
 }
 
+/* Title style */
+h1 {
+    color: #0073e6; /* Warna judul biru */
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Container for sections */
 #container {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
+/* Section style */
 .section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 200px;
-    width: 200px;
-    border: solid black;
-    margin: 20px;
-    padding: 20px;
+    width: 45%;
 }
 
-.section * {
-    margin: 20px 0px;
+/* Styling for select elements */
+.tempType {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #99d6ff; /* Warna border biru muda */
+    margin-bottom: 10px;
+    background-color: #e0f7ff; /* Warna latar belakang biru muda */
+    color: #0059b3; /* Warna teks biru */
+}
+
+/* Styling for input fields */
+input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #99d6ff; /* Warna border biru muda */
+    background-color: white;
+    color: #0059b3; /* Warna teks biru */
+    box-sizing: border-box;
+}
+
+/* Convert button style */
+#convert {
+    background-color: #0073e6; /* Warna tombol biru */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+#convert:hover {
+    background-color: #0059b3; /* Warna hover tombol biru lebih gelap */
+}
+
+/* Alert message style */
+#alert {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ff3333;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 400px) {
+    #content {
+        width: 100%;
+        margin: 10px;
+    }
+
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        width: 100%;
+    }
 }

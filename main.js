@@ -45,7 +45,6 @@ btn.addEventListener('click', () => {
         tempOutput.value = fahrenheit;
     } else {
         tempOutput.value = '';
-        document.getElementById('value').value = '';
         _alert.style.display = 'block';      
     }
     
